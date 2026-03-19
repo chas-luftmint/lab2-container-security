@@ -4,7 +4,7 @@ Report Summary
 ┌─────────────────────────────────────────────────────────────────────────────┬────────────┬─────────────────┬─────────┐
 │                                   Target                                    │    Type    │ Vulnerabilities │ Secrets │
 ├─────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
-│ my-app:vulnerable (debian 12.7)                                             │   debian   │      1492       │    -    │
+│ my-app:vulnerable (debian 12.7)                                             │   debian   │      1497       │    -    │
 ├─────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ usr/local/lib/python3.8/site-packages/Flask-1.0.dist-info/METADATA          │ python-pkg │        1        │    -    │
 ├─────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
@@ -31,7 +31,7 @@ Legend:
 
 my-app:vulnerable (debian 12.7)
 ===============================
-Total: 1492 (HIGH: 1311, CRITICAL: 181)
+Total: 1497 (HIGH: 1316, CRITICAL: 181)
 
 ┌─────────────────────────────┬────────────────┬──────────┬──────────────┬──────────────────────────────┬──────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │ Vulnerability  │ Severity │    Status    │      Installed Version       │        Fixed Version         │                            Title                             │
@@ -264,9 +264,6 @@ Total: 1492 (HIGH: 1311, CRITICAL: 181)
 │                             │ CVE-2026-30883 │          │              │                              │                              │ ImageMagick: ImageMagick: Denial of Service due to heap      │
 │                             │                │          │              │                              │                              │ overflow when processing large...                            │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-30883                   │
-│                             ├────────────────┤          │              │                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2026-30929 │          │              │                              │                              │ ImageMagick: stack-based buffer overflow in MagnifyImage     │
-│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-30929                   │
 ├─────────────────────────────┼────────────────┼──────────┼──────────────┤                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │ imagemagick-6-common        │ CVE-2025-53014 │ CRITICAL │ fixed        │                              │ 8:6.9.11.60+dfsg-1.6+deb12u4 │ ImageMagick: ImageMagick Heap Buffer Overflow                │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2025-53014                   │
@@ -426,9 +423,6 @@ Total: 1492 (HIGH: 1311, CRITICAL: 181)
 │                             │ CVE-2026-30883 │          │              │                              │                              │ ImageMagick: ImageMagick: Denial of Service due to heap      │
 │                             │                │          │              │                              │                              │ overflow when processing large...                            │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-30883                   │
-│                             ├────────────────┤          │              │                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2026-30929 │          │              │                              │                              │ ImageMagick: stack-based buffer overflow in MagnifyImage     │
-│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-30929                   │
 ├─────────────────────────────┼────────────────┼──────────┼──────────────┤                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │ imagemagick-6.q16           │ CVE-2025-53014 │ CRITICAL │ fixed        │                              │ 8:6.9.11.60+dfsg-1.6+deb12u4 │ ImageMagick: ImageMagick Heap Buffer Overflow                │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2025-53014                   │
@@ -588,9 +582,6 @@ Total: 1492 (HIGH: 1311, CRITICAL: 181)
 │                             │ CVE-2026-30883 │          │              │                              │                              │ ImageMagick: ImageMagick: Denial of Service due to heap      │
 │                             │                │          │              │                              │                              │ overflow when processing large...                            │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-30883                   │
-│                             ├────────────────┤          │              │                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2026-30929 │          │              │                              │                              │ ImageMagick: stack-based buffer overflow in MagnifyImage     │
-│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-30929                   │
 ├─────────────────────────────┼────────────────┼──────────┤              ├──────────────────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │ libaom3                     │ CVE-2023-6879  │ CRITICAL │              │ 3.6.0-1+deb12u1              │                              │ aom: heap-buffer-overflow on frame size change               │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2023-6879                    │
@@ -935,9 +926,6 @@ Total: 1492 (HIGH: 1311, CRITICAL: 181)
 │                             │ CVE-2026-30883 │          │              │                              │                              │ ImageMagick: ImageMagick: Denial of Service due to heap      │
 │                             │                │          │              │                              │                              │ overflow when processing large...                            │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-30883                   │
-│                             ├────────────────┤          │              │                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2026-30929 │          │              │                              │                              │ ImageMagick: stack-based buffer overflow in MagnifyImage     │
-│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-30929                   │
 ├─────────────────────────────┼────────────────┼──────────┼──────────────┤                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │ libmagickcore-6-headers     │ CVE-2025-53014 │ CRITICAL │ fixed        │                              │ 8:6.9.11.60+dfsg-1.6+deb12u4 │ ImageMagick: ImageMagick Heap Buffer Overflow                │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2025-53014                   │
@@ -1097,9 +1085,6 @@ Total: 1492 (HIGH: 1311, CRITICAL: 181)
 │                             │ CVE-2026-30883 │          │              │                              │                              │ ImageMagick: ImageMagick: Denial of Service due to heap      │
 │                             │                │          │              │                              │                              │ overflow when processing large...                            │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-30883                   │
-│                             ├────────────────┤          │              │                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2026-30929 │          │              │                              │                              │ ImageMagick: stack-based buffer overflow in MagnifyImage     │
-│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-30929                   │
 ├─────────────────────────────┼────────────────┼──────────┼──────────────┤                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │ libmagickcore-6.q16-6       │ CVE-2025-53014 │ CRITICAL │ fixed        │                              │ 8:6.9.11.60+dfsg-1.6+deb12u4 │ ImageMagick: ImageMagick Heap Buffer Overflow                │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2025-53014                   │
@@ -1259,9 +1244,6 @@ Total: 1492 (HIGH: 1311, CRITICAL: 181)
 │                             │ CVE-2026-30883 │          │              │                              │                              │ ImageMagick: ImageMagick: Denial of Service due to heap      │
 │                             │                │          │              │                              │                              │ overflow when processing large...                            │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-30883                   │
-│                             ├────────────────┤          │              │                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2026-30929 │          │              │                              │                              │ ImageMagick: stack-based buffer overflow in MagnifyImage     │
-│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-30929                   │
 ├─────────────────────────────┼────────────────┼──────────┼──────────────┤                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │ libmagickcore-6.q16-6-extra │ CVE-2025-53014 │ CRITICAL │ fixed        │                              │ 8:6.9.11.60+dfsg-1.6+deb12u4 │ ImageMagick: ImageMagick Heap Buffer Overflow                │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2025-53014                   │
@@ -1421,9 +1403,6 @@ Total: 1492 (HIGH: 1311, CRITICAL: 181)
 │                             │ CVE-2026-30883 │          │              │                              │                              │ ImageMagick: ImageMagick: Denial of Service due to heap      │
 │                             │                │          │              │                              │                              │ overflow when processing large...                            │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-30883                   │
-│                             ├────────────────┤          │              │                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2026-30929 │          │              │                              │                              │ ImageMagick: stack-based buffer overflow in MagnifyImage     │
-│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-30929                   │
 ├─────────────────────────────┼────────────────┼──────────┼──────────────┤                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │ libmagickcore-6.q16-dev     │ CVE-2025-53014 │ CRITICAL │ fixed        │                              │ 8:6.9.11.60+dfsg-1.6+deb12u4 │ ImageMagick: ImageMagick Heap Buffer Overflow                │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2025-53014                   │
@@ -1583,9 +1562,6 @@ Total: 1492 (HIGH: 1311, CRITICAL: 181)
 │                             │ CVE-2026-30883 │          │              │                              │                              │ ImageMagick: ImageMagick: Denial of Service due to heap      │
 │                             │                │          │              │                              │                              │ overflow when processing large...                            │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-30883                   │
-│                             ├────────────────┤          │              │                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2026-30929 │          │              │                              │                              │ ImageMagick: stack-based buffer overflow in MagnifyImage     │
-│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-30929                   │
 ├─────────────────────────────┼────────────────┼──────────┼──────────────┤                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │ libmagickcore-dev           │ CVE-2025-53014 │ CRITICAL │ fixed        │                              │ 8:6.9.11.60+dfsg-1.6+deb12u4 │ ImageMagick: ImageMagick Heap Buffer Overflow                │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2025-53014                   │
@@ -1745,9 +1721,6 @@ Total: 1492 (HIGH: 1311, CRITICAL: 181)
 │                             │ CVE-2026-30883 │          │              │                              │                              │ ImageMagick: ImageMagick: Denial of Service due to heap      │
 │                             │                │          │              │                              │                              │ overflow when processing large...                            │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-30883                   │
-│                             ├────────────────┤          │              │                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2026-30929 │          │              │                              │                              │ ImageMagick: stack-based buffer overflow in MagnifyImage     │
-│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-30929                   │
 ├─────────────────────────────┼────────────────┼──────────┼──────────────┤                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │ libmagickwand-6-headers     │ CVE-2025-53014 │ CRITICAL │ fixed        │                              │ 8:6.9.11.60+dfsg-1.6+deb12u4 │ ImageMagick: ImageMagick Heap Buffer Overflow                │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2025-53014                   │
@@ -1907,9 +1880,6 @@ Total: 1492 (HIGH: 1311, CRITICAL: 181)
 │                             │ CVE-2026-30883 │          │              │                              │                              │ ImageMagick: ImageMagick: Denial of Service due to heap      │
 │                             │                │          │              │                              │                              │ overflow when processing large...                            │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-30883                   │
-│                             ├────────────────┤          │              │                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2026-30929 │          │              │                              │                              │ ImageMagick: stack-based buffer overflow in MagnifyImage     │
-│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-30929                   │
 ├─────────────────────────────┼────────────────┼──────────┼──────────────┤                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │ libmagickwand-6.q16-6       │ CVE-2025-53014 │ CRITICAL │ fixed        │                              │ 8:6.9.11.60+dfsg-1.6+deb12u4 │ ImageMagick: ImageMagick Heap Buffer Overflow                │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2025-53014                   │
@@ -2069,9 +2039,6 @@ Total: 1492 (HIGH: 1311, CRITICAL: 181)
 │                             │ CVE-2026-30883 │          │              │                              │                              │ ImageMagick: ImageMagick: Denial of Service due to heap      │
 │                             │                │          │              │                              │                              │ overflow when processing large...                            │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-30883                   │
-│                             ├────────────────┤          │              │                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2026-30929 │          │              │                              │                              │ ImageMagick: stack-based buffer overflow in MagnifyImage     │
-│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-30929                   │
 ├─────────────────────────────┼────────────────┼──────────┼──────────────┤                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │ libmagickwand-6.q16-dev     │ CVE-2025-53014 │ CRITICAL │ fixed        │                              │ 8:6.9.11.60+dfsg-1.6+deb12u4 │ ImageMagick: ImageMagick Heap Buffer Overflow                │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2025-53014                   │
@@ -2231,9 +2198,6 @@ Total: 1492 (HIGH: 1311, CRITICAL: 181)
 │                             │ CVE-2026-30883 │          │              │                              │                              │ ImageMagick: ImageMagick: Denial of Service due to heap      │
 │                             │                │          │              │                              │                              │ overflow when processing large...                            │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-30883                   │
-│                             ├────────────────┤          │              │                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2026-30929 │          │              │                              │                              │ ImageMagick: stack-based buffer overflow in MagnifyImage     │
-│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-30929                   │
 ├─────────────────────────────┼────────────────┼──────────┼──────────────┤                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │ libmagickwand-dev           │ CVE-2025-53014 │ CRITICAL │ fixed        │                              │ 8:6.9.11.60+dfsg-1.6+deb12u4 │ ImageMagick: ImageMagick Heap Buffer Overflow                │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2025-53014                   │
@@ -2393,9 +2357,6 @@ Total: 1492 (HIGH: 1311, CRITICAL: 181)
 │                             │ CVE-2026-30883 │          │              │                              │                              │ ImageMagick: ImageMagick: Denial of Service due to heap      │
 │                             │                │          │              │                              │                              │ overflow when processing large...                            │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-30883                   │
-│                             ├────────────────┤          │              │                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2026-30929 │          │              │                              │                              │ ImageMagick: stack-based buffer overflow in MagnifyImage     │
-│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-30929                   │
 ├─────────────────────────────┼────────────────┤          │              ├──────────────────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │ libmariadb-dev              │ CVE-2025-13699 │          │              │ 1:10.11.6-0+deb12u1          │                              │ mariadb: MariaDB: mariadb-dump utility vulnerable to remote  │
 │                             │                │          │              │                              │                              │ code execution via improper path...                          │
@@ -4751,7 +4712,8 @@ Total: 1492 (HIGH: 1311, CRITICAL: 181)
 │                             │                │          │              │                              │                              │ PCI1xxxx devices...                                          │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2025-38422                   │
 │                             ├────────────────┤          │              │                              │                              ├──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2025-38425 │          │              │                              │                              │ kernel: i2c: tegra: check msg length in SMBUS block read     │
+│                             │ CVE-2025-38425 │          │              │                              │                              │ kernel: Linux kernel (i2c Tegra): Information disclosure or  │
+│                             │                │          │              │                              │                              │ denial of service via...                                     │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2025-38425                   │
 │                             ├────────────────┤          │              │                              │                              ├──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2025-38428 │          │              │                              │                              │ kernel: Input: ims-pcu - check record size in                │
@@ -4810,6 +4772,10 @@ Total: 1492 (HIGH: 1311, CRITICAL: 181)
 │                             │ CVE-2025-38500 │          │              │                              │ 6.1.148-1                    │ kernel: xfrm: interface: fix use-after-free after changing   │
 │                             │                │          │              │                              │                              │ collect_md xfrm interface                                    │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2025-38500                   │
+│                             ├────────────────┤          │              │                              │                              ├──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2025-38501 │          │              │                              │                              │ kernel: ksmbd: limit repeated connections from clients with  │
+│                             │                │          │              │                              │                              │ the same IP                                                  │
+│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2025-38501                   │
 │                             ├────────────────┤          │              │                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2025-38502 │          │              │                              │ 6.1.153-1                    │ kernel: bpf: Fix oob access in cgroup local storage          │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2025-38502                   │
@@ -5381,17 +5347,29 @@ Total: 1492 (HIGH: 1311, CRITICAL: 181)
 │                             ├────────────────┤          ├──────────────┤                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2025-71162 │          │ fixed        │                              │ 6.1.162-1                    │ kernel: dmaengine: tegra-adma: Fix use-after-free            │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2025-71162                   │
-│                             ├────────────────┤          │              │                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2025-71238 │          │              │                              │ 6.1.164-1                    │ kernel: Linux kernel (qla2xxx): Double free vulnerability    │
+│                             ├────────────────┤          ├──────────────┤                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2025-71221 │          │ affected     │                              │                              │ kernel: dmaengine: mmp_pdma: Fix race condition in           │
+│                             │                │          │              │                              │                              │ mmp_pdma_residue()                                           │
+│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2025-71221                   │
+│                             ├────────────────┤          ├──────────────┤                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2025-71238 │          │ fixed        │                              │ 6.1.164-1                    │ kernel: Linux kernel (qla2xxx): Double free vulnerability    │
 │                             │                │          │              │                              │                              │ leads to denial of service...                                │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2025-71238                   │
-│                             ├────────────────┤          │              │                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2026-22980 │          │              │                              │ 6.1.162-1                    │ kernel: nfsd: provide locking for v4_end_grace               │
+│                             ├────────────────┤          ├──────────────┤                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2025-71269 │          │ affected     │                              │                              │ kernel: btrfs: do not free data reservation in fallback from │
+│                             │                │          │              │                              │                              │ inline due...                                                │
+│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2025-71269                   │
+│                             ├────────────────┤          ├──────────────┤                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2026-22980 │          │ fixed        │                              │ 6.1.162-1                    │ kernel: nfsd: provide locking for v4_end_grace               │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-22980                   │
 │                             ├────────────────┤          │              │                              │                              ├──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2026-22984 │          │              │                              │                              │ kernel: libceph: prevent potential out-of-bounds reads in    │
 │                             │                │          │              │                              │                              │ handle_auth_done()                                           │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-22984                   │
+│                             ├────────────────┤          │              │                              │                              ├──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2026-22998 │          │              │                              │                              │ kernel: nvme-tcp: fix NULL pointer dereferences in           │
+│                             │                │          │              │                              │                              │ nvmet_tcp_build_pdu_iovec                                    │
+│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-22998                   │
 │                             ├────────────────┤          │              │                              │                              ├──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2026-23001 │          │              │                              │                              │ kernel: macvlan: fix possible UAF in                         │
 │                             │                │          │              │                              │                              │ macvlan_forward_source()                                     │
@@ -5413,31 +5391,40 @@ Total: 1492 (HIGH: 1311, CRITICAL: 181)
 │                             │                │          │              │                              │                              │ path                                                         │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23068                   │
 │                             ├────────────────┤          │              │                              │                              ├──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2026-23073 │          │              │                              │                              │ kernel: wifi: rsi: Fix memory corruption due to not set vif  │
+│                             │                │          │              │                              │                              │ driver...                                                    │
+│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23073                   │
+│                             ├────────────────┤          │              │                              │                              ├──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2026-23074 │          │              │                              │                              │ kernel: Linux kernel: Use-after-free in teql queueing        │
 │                             │                │          │              │                              │                              │ discipline can lead to privilege...                          │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23074                   │
 │                             ├────────────────┤          │              │                              │                              ├──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2026-23097 │          │              │                              │                              │ kernel: Linux kernel: Denial of Service due to a deadlock in │
-│                             │                │          │              │                              │                              │ hugetlb...                                                   │
-│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23097                   │
+│                             │ CVE-2026-23076 │          │              │                              │                              │ kernel: Linux kernel: Denial of Service in ALSA ctxfi driver │
+│                             │                │          │              │                              │                              │ due to...                                                    │
+│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23076                   │
+│                             ├────────────────┤          │              │                              │                              ├──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2026-23078 │          │              │                              │                              │ kernel: ALSA: scarlett2: Fix buffer overflow in config       │
+│                             │                │          │              │                              │                              │ retrieval                                                    │
+│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23078                   │
+│                             ├────────────────┤          │              │                              │                              ├──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2026-23083 │          │              │                              │                              │ kernel: fou: Don't allow 0 for FOU_ATTR_IPPROTO              │
+│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23083                   │
+│                             ├────────────────┤          │              │                              │                              ├──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2026-23089 │          │              │                              │                              │ kernel: ALSA: usb-audio: Fix use-after-free in               │
+│                             │                │          │              │                              │                              │ snd_usb_mixer_free()                                         │
+│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23089                   │
+│                             ├────────────────┤          │              │                              │                              ├──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2026-23098 │          │              │                              │                              │ kernel: netrom: fix double-free in nr_route_frame()          │
+│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23098                   │
+│                             ├────────────────┤          │              │                              │                              ├──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2026-23099 │          │              │                              │                              │ kernel: bonding: limit BOND_MODE_8023AD to Ethernet devices  │
+│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23099                   │
 │                             ├────────────────┤          │              │                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2026-23111 │          │              │                              │ 6.1.164-1                    │ kernel: Kernel: Privilege escalation or denial of service in │
 │                             │                │          │              │                              │                              │ nf_tables via inverted...                                    │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23111                   │
-│                             ├────────────────┤          │              │                              │                              ├──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2026-23112 │          │              │                              │                              │ kernel: nvmet-tcp: add bounds checks in                      │
-│                             │                │          │              │                              │                              │ nvmet_tcp_build_pdu_iovec                                    │
-│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23112                   │
 │                             ├────────────────┤          │              │                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2026-23139 │          │              │                              │ 6.1.162-1                    │ kernel: netfilter: nf_conncount: update last_gc only when GC │
-│                             │                │          │              │                              │                              │ has been performed                                           │
-│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23139                   │
-│                             ├────────────────┤          │              │                              │                              ├──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2026-23144 │          │              │                              │                              │ kernel: Linux kernel: Local denial of service and memory     │
-│                             │                │          │              │                              │                              │ leak in DAMON...                                             │
-│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23144                   │
-│                             ├────────────────┤          │              │                              │                              ├──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2026-23156 │          │              │                              │                              │ kernel: Linux kernel: Information disclosure in efivarfs via │
+│                             │ CVE-2026-23156 │          │              │                              │ 6.1.162-1                    │ kernel: Linux kernel: Information disclosure in efivarfs via │
 │                             │                │          │              │                              │                              │ incorrect error propagation                                  │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23156                   │
 │                             ├────────────────┤          ├──────────────┤                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
@@ -5454,18 +5441,58 @@ Total: 1492 (HIGH: 1311, CRITICAL: 181)
 │                             ├────────────────┤          ├──────────────┤                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2026-23204 │          │ affected     │                              │                              │ kernel: net/sched: cls_u32: use skb_header_pointer_careful() │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23204                   │
+│                             ├────────────────┤          │              │                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2026-23208 │          │              │                              │                              │ kernel: ALSA: usb-audio: Prevent excessive number of frames  │
+│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23208                   │
 │                             ├────────────────┤          ├──────────────┤                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2026-23209 │          │ fixed        │                              │ 6.1.164-1                    │ kernel: macvlan: fix error recovery in                       │
 │                             │                │          │              │                              │                              │ macvlan_common_newlink()                                     │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23209                   │
+│                             ├────────────────┤          │              │                              │                              ├──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2026-23216 │          │              │                              │                              │ kernel: scsi: target: iscsi: Fix use-after-free in           │
+│                             │                │          │              │                              │                              │ iscsit_dec_conn_usage_count()                                │
+│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23216                   │
+│                             ├────────────────┤          │              │                              │                              ├──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2026-23221 │          │              │                              │                              │ kernel: bus: fsl-mc: fix use-after-free in                   │
+│                             │                │          │              │                              │                              │ driver_override_show()                                       │
+│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23221                   │
 │                             ├────────────────┤          ├──────────────┤                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2026-23226 │          │ affected     │                              │                              │ kernel: ksmbd: add chann_lock to protect ksmbd_chann_list    │
 │                             │                │          │              │                              │                              │ xarray                                                       │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23226                   │
 │                             ├────────────────┤          │              │                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2026-23227 │          │              │                              │                              │ kernel: drm/exynos: vidi: use ctx->lock to protect struct    │
+│                             │                │          │              │                              │                              │ vidi_context member variables related...                     │
+│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23227                   │
+│                             ├────────────────┤          │              │                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2026-23231 │          │              │                              │                              │ kernel: kernel: Privilege escalation or denial of service    │
 │                             │                │          │              │                              │                              │ via use-after-free in nf_tables_addchain()...                │
 │                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23231                   │
+│                             ├────────────────┤          ├──────────────┤                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2026-23234 │          │ fixed        │                              │ 6.1.164-1                    │ kernel: f2fs: fix to avoid UAF in f2fs_write_end_io()        │
+│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23234                   │
+│                             ├────────────────┤          │              │                              │                              ├──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2026-23235 │          │              │                              │                              │ kernel: f2fs: fix out-of-bounds access in sysfs attribute    │
+│                             │                │          │              │                              │                              │ read/write                                                   │
+│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23235                   │
+│                             ├────────────────┤          ├──────────────┤                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2026-23242 │          │ affected     │                              │                              │ kernel: RDMA/siw: Fix potential NULL pointer dereference in  │
+│                             │                │          │              │                              │                              │ header processing                                            │
+│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23242                   │
+│                             ├────────────────┤          │              │                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2026-23243 │          │              │                              │                              │ kernel: RDMA/umad: Reject negative data_len in ib_umad_write │
+│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23243                   │
+│                             ├────────────────┤          │              │                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2026-23255 │          │              │                              │                              │ kernel: net: add proper RCU protection to /proc/net/ptype    │
+│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23255                   │
+│                             ├────────────────┤          ├──────────────┤                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2026-23262 │          │ fixed        │                              │ 6.1.164-1                    │ kernel: gve: Fix stats report corruption on queue count      │
+│                             │                │          │              │                              │                              │ change                                                       │
+│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23262                   │
+│                             ├────────────────┤          ├──────────────┤                              ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2026-23270 │          │ affected     │                              │                              │ kernel: net/sched: Only allow act_ct to bind to              │
+│                             │                │          │              │                              │                              │ clsact/ingress qdiscs and shared...                          │
+│                             │                │          │              │                              │                              │ https://avd.aquasec.com/nvd/cve-2026-23270                   │
 ├─────────────────────────────┼────────────────┤          │              ├──────────────────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │ mariadb-common              │ CVE-2025-13699 │          │              │ 1:10.11.6-0+deb12u1          │                              │ mariadb: MariaDB: mariadb-dump utility vulnerable to remote  │
 │                             │                │          │              │                              │                              │ code execution via improper path...                          │
