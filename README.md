@@ -8,14 +8,14 @@ Genererat SBOM
 Använt Gatekeeper med kubernetes, och skrivit yaml filer för policies i repot.
 
 Trivy before hardening;
-[(screenshots/trivy-before.png)]
+[!(screenshots/trivy-before.png)]
 
 Trivy after hardening;
-[(screenshots/trivy-after.png)]
+[!(screenshots/trivy-after.png)]
 
 Gatekeeper Deny
-[(gatekeeper-deny.png)]
+[!(gatekeeper-deny.png)]
 
 Gatekeepr Pass
-[(gatekeeper-pass.png)]
+[!(gatekeeper-pass.png)]
 
