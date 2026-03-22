@@ -51,3 +51,12 @@ För att säkerställa att inga "osäkra" resurser deployas i klustret har jag i
 
 ### Implementerad Policy: `Require Labels`
 Jag skapade en `ConstraintTemplate` och en `Constraint` som tvingar alla Pods i namesp
+
+
+## Reflektioner
+
+Container-säkerhet handlar om att minimera attackytan. Genom att byta till en "slim"-image och köra som non-root (appuser) har jag tagit bort hundratals onödiga sårbarheter och sett till att en eventuell angripare inte får kontroll över host-systemet. Det handlar om att bygga säkert från grunden istället för att bara hoppas på det bästa.
+
+SBOM är som en innehållsförteckning för min mjukvara. Det är kritiskt för "Supply Chain Security" eftersom jag på några sekunder kan se exakt vilka paket som körs. Jag tänkte aldrig på det för mycket, men har gjort min egen version av en SBOM under praktik tidigare då jag behövde göra en hel inventering för att de inte hade det. SBOM verkar underlätta det också. Och om en ny sårbarhet (CVE) dyker upp imorgon behöver jag inte gissa – jag har dokumentationen redo direkt, vilket sparar veckor av manuellt arbete.
+
+Gatekeeper ändrar arbetssättet i Kubernetes genom "Policy as Code". Istället för att rätta fel i efterhand fungerar det som en digital dörrvakt (Admission Controller) som stoppar osäkra resurser innan de ens deployas. Det skapar trygga ramar för utvecklare och automatiserar säkerheten på ett sätt som gör klustret mer robust över tid.
